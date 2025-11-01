@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyCut</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header/Logo Section -->
+        <div class="header">
+            <div class="left-header-content">
+                <div class="logo">
+                    <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48">
+                        <defs>
+                            <filter id="glow">
+                                <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                                <feMerge>
+                                    <feMergeNode in="coloredBlur"/>
+                                    <feMergeNode in="SourceGraphic"/>
+                                </feMerge>
+                            </filter>
+                        </defs>
+                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="none" stroke="#ffd700" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" filter="url(#glow)"/>
+                    </svg>
+                    <span class="brand-name">
+                        <span class="brand-text-white">Easy</span>
+                        <span class="brand-text-pink">Cut</span>
+                    </span>
+                </div>
+                <p class="header-subtitle">专业的网络管理工具</p>
+            </div>
+            <!-- Call-to-Action Buttons -->
+            <div class="buttons">
+                <a href="https://m.tb.cn/h.So1BtK8?tk=o06hf5JQTZD" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                    <span class="btn-icon">></span>
+                    <span class="btn-text">下载使用</span>
+                </a>
+                <a href="#" class="btn btn-secondary" id="showQRCodeBtn">
+                    <span class="btn-icon">💬</span>
+                    <span class="btn-text">产品留言@500佰</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Product Introduction -->
+        <div class="content">
+            <p class="description">
+                <p class="subtitle">非常适合在职场中需要频繁切换内、外网的朋友使用<br></p>
+                
+                电脑内外网保持 & 双网口保持，连接不掉线<br>
+                安装一键可安装，安装后启动即可，请放心使用<br>
+                同时启用并保持两个网络处于连接状态，此为最大优势，因网络有持续保持连接（不掉线）<br>从而避免了手动登录内网、手动连接WIFI这些重复性操作，节省了大量的时间，提高了工作效率<br>
+            </p>
+        </div>
+
+        <!-- Image Gallery -->
+        <div class="gallery" id="gallery">
+            <!-- Images will be loaded here by JavaScript -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p class="footer-text">作者@500佰 有使用问题欢迎留言</p>
+    </footer>
+
+    <!-- QR Code Modal -->
+    <div id="qrCodeModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3 class="modal-title">扫码留言</h3>
+            <img src="easycutpro/500bai.jpg" alt="二维码" class="qr-code-image">
+            <p class="modal-text">扫描二维码即可留言</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
