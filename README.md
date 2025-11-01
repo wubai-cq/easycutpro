@@ -1,6 +1,37 @@
 # EasyCut Pro 前端项目
 
-## 启动方式
+## 🌐 GitHub Pages 部署
+
+本项目已配置自动部署到 GitHub Pages。部署后的访问地址为：`https://[你的用户名].github.io/easycutpro`
+
+### 部署步骤：
+
+1. **确保仓库名为 `easycutpro`**
+   - 在 GitHub 上创建名为 `easycutpro` 的仓库
+   - 或者将现有仓库重命名为 `easycutpro`
+
+2. **推送代码到 GitHub**
+   ```bash
+   git add .
+   git commit -m "Initial commit"
+   git remote add origin https://github.com/[你的用户名]/easycutpro.git
+   git push -u origin master
+   ```
+
+3. **启用 GitHub Pages**
+   - 进入仓库的 Settings → Pages
+   - Source 选择 "GitHub Actions"
+   - 保存设置
+
+4. **自动部署**
+   - 每次推送到 `master` 或 `main` 分支时，GitHub Actions 会自动部署
+   - 也可以手动触发：Actions → Deploy to GitHub Pages → Run workflow
+
+5. **访问网站**
+   - 部署完成后，访问：`https://[你的用户名].github.io/easycutpro`
+   - 首次部署可能需要几分钟时间
+
+## 本地启动方式
 
 ### 方法1：直接用浏览器打开
 双击 `index.html` 文件即可在浏览器中打开。
