@@ -178,12 +178,24 @@ body {
 }
 
 .btn-primary {
+    background: linear-gradient(135deg, #ff1493 0%, #ff69b4 100%);
+    color: #ffffff;
+    box-shadow: 0 4px 15px rgba(255, 20, 147, 0.3);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #ff69b4 0%, #ff1493 100%);
+    box-shadow: 0 6px 20px rgba(255, 20, 147, 0.5);
+    transform: translateY(-2px);
+}
+
+.btn-help {
     background: #238636;
     color: #ffffff;
     box-shadow: 0 4px 15px rgba(35, 134, 54, 0.3);
 }
 
-.btn-primary:hover {
+.btn-help:hover {
     background: #2ea043;
     box-shadow: 0 6px 20px rgba(35, 134, 54, 0.5);
     transform: translateY(-2px);
