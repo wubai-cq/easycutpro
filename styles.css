@@ -110,10 +110,19 @@ body::before {
     text-shadow: none;
 }
 
+.section-title {
+    font-size: 22px;
+    color: #1c1c1a;
+    font-weight: 700;
+    margin-bottom: 24px;
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+}
+
 /* Content Section */
 .content {
     margin-bottom: 40px;
-    max-width: 700px;
+    max-width: 1200px;
 }
 
 .description {
@@ -134,15 +143,62 @@ body::before {
     margin: 8px 0;
 }
 
-.list-bar {
-    display: inline-block;
+.feature-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.feature-cards .feature-card {
+    flex: 1;
+    min-width: 250px;
+}
+
+.feature-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    background: #ffffff;
+    border: 1px solid rgba(28, 28, 26, 0.06);
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 2px 12px rgba(28, 28, 26, 0.04);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(28, 28, 26, 0.08);
+}
+
+.card-accent {
     width: 6px;
-    height: 18px;
+    height: 36px;
     background-color: #2F5018;
     border-radius: 3px;
-    margin-right: 10px;
-    vertical-align: middle;
     flex-shrink: 0;
+    margin-top: 4px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1c1c1a;
+    line-height: 1.4;
+}
+
+.card-desc {
+    font-size: 16px;
+    color: #4a4a46;
+    line-height: 1.6;
+    font-weight: 400;
 }
 
 .highlight-orange {
@@ -272,12 +328,29 @@ body::before {
         font-size: 18px;
     }
 
+    .section-title {
+        font-size: 18px;
+    }
+
     .description {
         font-size: 15px;
         line-height: 1.6;
         color: #4a4a46;
         font-weight: 400;
         letter-spacing: 0;
+    }
+
+    .feature-card {
+        padding: 18px;
+        gap: 12px;
+    }
+
+    .card-title {
+        font-size: 16px;
+    }
+
+    .card-desc {
+        font-size: 14px;
     }
 
     .gallery img {
